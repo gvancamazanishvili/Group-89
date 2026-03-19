@@ -1,0 +1,263 @@
+    @import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap');
+    /* font-family: "Monsieur La Doulaise", cursive; -->  for header and some fansy decors */
+
+    @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+    /* font-family: "Merriweather", serif; --> business the one i'll use in mist of web */
+
+
+    /* styling all the html files */
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: 0;
+        font-weight: 400;
+        font-family: "Merriweather", serif; 
+        scrollbar-width: thin;
+        scrollbar-color: #f4ecd4 #1f202d;
+    }
+
+    body{
+        background-color: #b7c2e3;
+        background-image: url(../ICONS/contact.jpg);
+        background-size: cover;
+    }
+
+    /* styling header */
+    header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 2%;
+        background-color: #54577a;
+        height: 10%;
+        width: 100%;
+    }
+
+    #company-name{
+        padding-right: 30%;
+        font-family: "Monsieur La Doulaise";
+        font-size: 40px;
+        color: #f4ecd4;
+        font-weight: 700;
+    }
+
+    /* navigation links */
+    header ul{
+        display: flex;
+        list-style: none;
+        gap: 20px;
+    }
+
+    header ul li{
+        color: #f4ecd4;
+        font-weight: 700;
+        transition: color 0.3s linear;
+    }
+    header ul li:hover{
+        color: #1f202d;
+        text-decoration: underline #1f202d;
+    }
+
+    header ul a{
+        text-decoration: none;
+    }
+
+    /* registration buttons */
+    .reg{
+        background-color: #444663;
+        border: none;
+        border-radius: 3px;
+        padding: 5px;
+    }
+
+    /* End of header */
+
+
+    /* main */
+
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 40px;
+    }
+    form{
+        display: flex;
+        justify-content: baseline;
+        align-items: center;
+        flex-direction: column;
+        background-color: #f9e79f;
+        text-align: center;
+        width: 700px;
+        height: auto;
+        padding: 50px;
+        border-radius: 30px;
+    }
+
+    #Title{
+        color: #7d3c98;
+        font-weight: 800;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+
+    .title-p{
+        color: #1f202d;
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    #colmn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .inputs{
+        width: 300px;
+        height: 40px;
+        background-color: #f4ecd4;
+        border: 2px solid #1f202d;
+        margin: 10px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .inputs:focus{
+        outline: 2px solid #7d3c98;
+    }
+    #input-1-2{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #guest-count{
+        width: 630px;
+    }
+
+    #txt-area{
+        padding: 5px;
+        width: 630px;
+        height: 300px;
+        padding-top: 20px;
+    }
+
+    #btn-submit{
+        width: 630px;
+        height: 50px;
+        border-radius: 20px;
+        background-color: #7d3c98;
+        border: 2px solid #1f202d;
+        color: #1f202d;
+        font-size: 20px;
+        padding: 5px;
+        font-weight: 800;
+        margin-top: 30px;
+        transition: color 0.3s linear, transform 0.3s linear;
+    }
+
+    #btn-submit:hover{
+        color: #f9e79f;
+        transform: scale(1.02);
+    }
+    
+    /* end of main */
+    
+    /* start of footer */
+    footer{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-direction: row;
+        box-sizing: border-box;
+        margin-right: 50px;
+        margin-top: 100px;
+        background-color: #54577a;
+        width: 100%;
+        height: 300px;
+        color: #f4ecd4;
+    }
+
+    /* first block of div #1 */
+    #c-name{
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        margin-top: 40px;
+    }
+
+    #txt{
+        width: 300px;
+        margin-top: 10px;
+        margin-left: 10px;
+        
+    }
+
+
+    /* second block of div #2 */
+
+    #links{
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        margin-top: 40px;
+    }
+    .a li{
+        margin-bottom: 6px;
+    }
+
+    .a{
+        text-decoration: none;
+        color: #f4ecd4;
+        transition: color 0.3s linear;
+    }
+
+    .ul{
+        list-style: none;
+        margin-top: 10px;
+    }
+
+
+    /* div #3 --> contact */
+
+    #contact{
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        margin-top: 40px;
+    }
+    .contact-options{
+        list-style-position: inside;
+        font-size: 15px;
+    }
+    .contact-options img{
+        width: 20px;
+        margin-top: 10px;
+    }
+
+    .a:hover{
+        color: #1f202d;
+        text-decoration: underline #1f202d;
+    }
+
+
+    /* div #4 --> Visit */
+
+    .visit{
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        margin-top: 40px;
+    }
+    #weekend{
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    /* end of footer */
